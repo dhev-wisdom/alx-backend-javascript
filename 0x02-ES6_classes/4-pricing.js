@@ -2,7 +2,7 @@ import Currency from './3-currency';
 
 export default class Pricing extends Currency {
   constructor(amount, currency) {
-    super();
+
     if (typeof amount === 'number') {
       this._amount = amount;
     } else {
