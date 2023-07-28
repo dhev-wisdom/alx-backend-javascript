@@ -68,4 +68,10 @@ export default class HolbertonCourse {
       throw TypeError('Students must be an array of strings');
     }
   }
+
+  * getSides() {
+    yield this._name;
+    yield this._length;
+    yield this._students;
+  }
 }

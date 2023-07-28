@@ -18,5 +18,3 @@ try {
 catch(err) {
     console.log(err);
 }
-
-console.log("Testing if code still works or is broken");
