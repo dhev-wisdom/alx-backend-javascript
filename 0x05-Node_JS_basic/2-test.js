@@ -10,11 +10,11 @@ const countStudents = (path) => {
     for (let i = 1; i < lines.length - 1; i += 1) {
       const line = lines[i];
       const parts = line.split(',');
-      const field = parts[parts.length - 1].trim();
+      const field = parts[parts.length - 1];
       if (!studentsCount[field] && field !== 'field' && field !== '') {
         studentsCount[field] = [];
       }
-      studentsCount[field].push(parts[0].trim());
+      studentsCount[field].push(parts[0]);
     }
 
     Object.keys(studentsCount).forEach((key) => {
