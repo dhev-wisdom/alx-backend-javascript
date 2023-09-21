@@ -1,4 +1,4 @@
-const calculateNumber = require('./0-calcul');
+const calculateNumber = require('./1-calcul');
 
 const assert = require('assert');
 

@@ -12,7 +12,7 @@ describe('calculateNumber', function() {
     assert.equal(result, 5);
   });
   it('Should return the sum of two params', function() {
-    const result = caalculateNumber(1.2, 3.7);
+    const result = calculateNumber(1.2, 3.7);
     assert.equal(result, 5);
   });
   it('Should return the sum of two params', function() {
