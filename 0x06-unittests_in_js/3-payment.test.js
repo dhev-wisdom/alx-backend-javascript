@@ -18,7 +18,7 @@ describe('sendPaymentRequestToApi', function() {
   it('it should log the sum just as Utils would', function() {
     const consoleSpy = sinon.spy(console, 'log');
     sendPaymentRequestToApi(100, 20);
-    expect(consoleSpy.calledWith('The total is: 120'));
+    expect(consoleSpy.calledWith('The total is: 120')).to.be.true;
     consoleSpy.restore();
   });
 });
