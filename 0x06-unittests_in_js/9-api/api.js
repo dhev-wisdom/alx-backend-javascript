@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
   res.send('Welcome to the payment system');
 });
 
-app.get('/cart/:id', validateIdParam, (req, res) => {
+app.get('/cart/:id([0-9]+)', (req, res) => {
   const id = req.params.id;
   res.send(`Payment methods for cart ${id}`);
 });
