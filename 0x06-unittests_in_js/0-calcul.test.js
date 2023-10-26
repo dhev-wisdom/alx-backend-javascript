@@ -19,11 +19,11 @@ describe('calculateNumber', function() {
     const result = calculateNumber(1.5, 3.7);
     assert.equal(result, 6);
   });
-  it('Should return the sum of two params with first number rounded', function() {
+  it('Should return the approximate sum of two params with first number rounded', function() {
     const result = calculateNumber(1.5, 4);
     assert.equal(result, 6);
   });
-  it('Should return the sum of two params with second number rounded', function() {
+  it('Should return the approximate sum of two params with second number rounded', function() {
     const result = calculateNumber(1, 4.7);
     assert.equal(result, 6);
   });
