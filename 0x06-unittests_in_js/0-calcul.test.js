@@ -27,4 +27,10 @@ describe('calculateNumber', function() {
     const result = calculateNumber(1, 4.7);
     assert.equal(result, 6);
   });
+  describe('calculateNumber for second param rounded', function() {
+    it('Should return the approximate sum of two params with second number rounded', function() {
+      const result = calculateNumber(1, 4.7);
+      assert.equal(result, 6);
+    });
+  });
 });
